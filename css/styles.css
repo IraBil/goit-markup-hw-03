@@ -227,6 +227,28 @@ img {
     font-weight: 400;
     letter-spacing: 0.02em;
 }
+
+.our-team {
+    background-color: var(--wight);
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.our-team-row {
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto; 
+    margin-top: 72px;   
+}
+
+.our-team-offset {
+    margin-right: 24px;
+    background: var(--wight-button);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+}
+
 .profession {
     color: var(--gray);
     font-weight: 400;
@@ -238,9 +260,14 @@ img {
 
 .footer {
     background-color: var(--basic-black);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 156px;
 }
 
 .text-footer {
+    width: 264px;
+    margin-top: 16px;
     color: var(--wight-footer-text);
     font-weight: 400;
     font-size: 16px;
