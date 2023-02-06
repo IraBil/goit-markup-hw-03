@@ -43,6 +43,8 @@ img {
 }
 
 .container {
+    margin-right: auto;
+    margin-left: auto;
     width: 1158px;
 }
 
@@ -164,18 +166,20 @@ img {
 
 .our-advantages {
     padding-top: 120px;
-    padding-bottom: 120px;
+    padding-bottom: 120px; 
 }
 
 .our-advantages-row {
-    justify-content: center;
-    margin-right: auto;
-    margin-left: auto;
+    justify-content: center;     
     display: flex;
 }
 
 .our-advantages-offset {
     margin-right: 24px;
+}
+
+.our-advantages-offset:last-child {
+    margin-right: 0px;
 }
 
 .title-h2 {
@@ -196,14 +200,16 @@ img {
 .doing-row {
     display: flex;
     justify-content: center;
-    margin-right: auto;
-    margin-left: auto;
     margin-top: 72px;
     margin-bottom: 120px;
 }
 
 .doing-offset {
     margin-right: 24px;
+}
+
+.doing-offset:last-child {
+    margin-right: 0px;
 }
 
 .title-h3 {
@@ -214,6 +220,7 @@ img {
 }
 
 .text {
+    margin-top: 8px;
     width: 264px;
     color: var(--gray);
     font-size: 16px;
@@ -231,13 +238,10 @@ img {
 .our-team-row {
     display: flex;
     justify-content: center;
-    margin-right: auto;
-    margin-left: auto; 
     margin-top: 72px;   
 }
 
 .our-team-cards {
-    padding-bottom: 32px;
     margin-right: 24px;    
     border-radius: 0px 0px 4px 4px;    
     background: var(--wight-button);
@@ -248,8 +252,10 @@ img {
     margin-right: 0px;
 }
 
+.our-team-text {
+    padding: 32px 0px;
+}
 .our-team-name {
-    margin-top: 32px;
     text-align: center;
     color: var(--basic-black);
     font-weight: 500;
@@ -298,8 +304,8 @@ img {
 .button-filter {
     display: flex;
     justify-content: center;
-    padding-top: 96px;
-    padding-bottom: 72px;
+    margin-top: 96px;
+    margin-bottom: 72px;
 }
 
 .button-filter-row {
@@ -323,6 +329,10 @@ img {
     margin-right: 24px;
 }
 
+.offset:last-child {
+    margin-right: 0px;
+}
+
 .button:hover,
 .button:focus {
     color: var(--wight-button);    
@@ -344,7 +354,6 @@ img {
 .filter-cards {
     margin-right: 24px;
     margin-bottom: 48px;
-    padding-bottom: 32px;
     width: 360px;
     /* background: var(--wight-button); */
     border: 1px solid var(--wight-footer-text);
@@ -359,10 +368,13 @@ img {
     /* background-color: orange; */
 }
 
+.filter-cards-text {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+}
+
 .filter-cards-content {
-    margin-right: 0px;
-    margin-top: 32px;
-    margin-left: 16px;
     color: var(--basic-black);
     font-weight: 500;
     font-size: 20px;
@@ -370,9 +382,7 @@ img {
 }
 
 .filter {
-    margin-right: 0px;
     margin-top: 8px;
-    margin-left: 16px;
     color: var(--gray);
     font-size: 16px;
     line-height: 1.5;
