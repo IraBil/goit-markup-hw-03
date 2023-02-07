@@ -46,6 +46,8 @@ img {
     margin-right: auto;
     margin-left: auto;
     width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .black {
@@ -57,7 +59,7 @@ img {
 }
 
 .logo {
-    margin-right: 76px;
+    /* margin-right: 76px; */
     color: var(--blue);
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
@@ -78,13 +80,16 @@ img {
     margin-right: auto;
     margin-left: auto;
     padding:  24px 0;
+}
+
+.header {
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: var(--wight-footer-text);
 }
 
 .navig-row {
-    margin-right: 332px;
+    margin-left: 76px;
 }
 
 .navig {
@@ -98,8 +103,15 @@ img {
     margin-right: 40px;
 }
 
+.navig-offset:last-child {
+    margin-right: 332px;
+}
 .contacts-offset {
     margin-right: 40px;
+}
+
+.contacts-offset:last-child {
+    margin-right: 0px;
 }
 
 .navig:hover,
@@ -193,7 +205,18 @@ img {
 }
 
 .invisible {
-    display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    /* display: none; */
     /* visibility: hidden; */
 }
 
@@ -229,8 +252,11 @@ img {
     letter-spacing: 0.02em;
 }
 
+.our-team-section {
+        background-color: var(--wight);
+}
+
 .our-team {
-    background-color: var(--wight);
     padding-top: 120px;
     padding-bottom: 120px;
 }
@@ -273,14 +299,17 @@ img {
     margin-top: 8px;
 }
 
+
 .footer {
     background-color: var(--basic-black);
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: 156px;
 }
 
-.text-footer {
+.footer-block-logo {
+    padding-top: 100px;
+    padding-bottom: 100px;  
+}
+
+.footer-text {
     width: 264px;
     margin-top: 16px;
     color: var(--wight-footer-text);
